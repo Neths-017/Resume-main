@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  background-color: #f8f6f0;
+}
+
+main {
+  margin-top: 100px;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}

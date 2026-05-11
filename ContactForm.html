@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/ContactForm/main.css" />
+</head>
+
+<body>
+  <main>
+    <div class="cf1">
+      <div>
+        <h1>K-Web-Resume</h1>
+      </div>
+      <div>
+        <h2>
+          Thank you for reaching out to me! I will contact you as soon as
+          possible!
+        </h2>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="cf2">
+      <div></div>
+      <form onsubmit="SendEmail(); reset(); return false;">
+        <!-- Main Form -->
+        <input type="text" id="nametext" name="name" required placeholder="Name" />
+        <input type="email" id="Customer_email" name="email" required placeholder="Email" />
+        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" />
+        <input type="text" id="Sub_text" name="subject" placeholder="Subject" />
+        <textarea class="text-message" name="msg" id="Message_text" placeholder="Message"></textarea>
+        <input type="hidden" name="_template" value="table">
+        <button class="submit-btn" type="submit">Submit</button>
+        <a href="index.html">Resume Website</a>
+    </div>
+    </form>
+    </div>
+  </main>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="scripts/EmailSender.js"> </script>
+</body>
+
+</html>
